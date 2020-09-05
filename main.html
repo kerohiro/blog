@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Nayoyaブログ</title>
+    <link rel="stylesheet" href="stylesheet.css">
+	<style>
+        .block-grid {
+	        width: auto;
+            overflow: hidden;
+            list-style: none;
+            margin: 0 -1% 30px;
+	        padding: 0;
+        }
+        .block-grid li {
+	        float: left;
+            margin: 0 1% 30px;
+            padding: 0;
+        }
+        .block-grid a {
+	        text-decoration: none;
+	        font-size: 1.6em;
+        }
+        @media (min-width: 600px){
+	        .block-grid-1-2-3 li {
+		        width: 48%;
+	        }
+	        .block-grid-1-2-3 li:nth-child(2n+1) {
+		        clear: both;
+	        }
+        }
+        @media (min-width: 800px){
+	        .block-grid-1-2-3 li {
+		        width: 31.3333%;
+	        }
+        	.block-grid-1-2-3 li:nth-child(2n+1) {
+		        clear: none;
+	        }
+	        .block-grid-1-2-3 li:nth-child(3n+1) {
+		        clear: both;
+	        }
+        }
+	</style>
+</head>
+
+<body>
+    <header>
+	    <div class="row">
+		    <div class="grid-12">
+			    <h1>Nayoyaブログ</h1>
+			    <p>大学生のブログ</p>
+		    </div>
+        </div>
+    </header>
+	<div class="row">
+		<div class="grid-12">
+			<ul class="block-grid block-grid-1-2-3">
+				<li>
+					<img src="http://placehold.it/600x360/c5c5c5/fff?text=1" />
+                    <a href="./blog/no1.html">ブログ始めました</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/600x360/c5c5c5/fff?text=2" />
+					<a href="">記事のタイトルなどのテキスト要素なので、画面の幅によって改行が生じます</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/600x360/c5c5c5/fff?text=3" />
+					<a href="">記事のタイトルなどのテキスト要素</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/600x360/c5c5c5/fff?text=4" />
+					<a href="">記事のタイトルなどのテキスト要素で高さが可変になります</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/600x360/c5c5c5/fff?text=5" />
+					<a href="">記事のタイトルなどのテキスト要素なので、画面の幅によって改行が生じるため高さが可変になります</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/600x360/c5c5c5/fff?text=6" />
+					<a href="">記事のタイトルなどのテキスト要素</a>
+				</li>
+				<li>
+					<img src="http://placehold.it/600x360/c5c5c5/fff?text=7" />
+					<a href="">記事のタイトルなどのテキスト要素</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
